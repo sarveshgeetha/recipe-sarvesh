@@ -1,0 +1,66 @@
+npm install -g angular-cli
+
+for creating project:
+------------------------
+1. ng new first-app
+
+Navigate to folder
+--------------------
+
+ng serve - similar to grunt serve
+
+ng generate component component-name--- generates new component
+
+ng g c component-name--flat (within existing component folder to create nested component)
+
+
+
+() -- event -->click , ngSubmit
+[] -- attribute --> disabled , ngClass
+[(ngModel)]
+
+*ngIf
+
+
+<p #bind>{{something}}</p>
+<p>{{bind.textContent}}</p>
+
+
+RC4 --> RC5
+
+directives & pipes should be in modules
+
+
+creating class
+--------------
+
+ng g cl class-name
+
+
+Repeating or ITeration
+----------------------
+
+*ngFor="let item of items"  -->> ngrepeat
+
+
+creation of custom directive
+----------------------------
+
+ng g d directive-name
+
+--------------------------------------------------------------------------------------------------------------
+@HostListener & @HostBinding for mouse events or for changing attributes(style) of an element
+--------------------------------------------------------------------------------------------------------------
+
+<li *ngFor="let item of items; let i = index">{{item}} --- {{i}}</li>
+
+--------------------------------------------------------------------------------------------------------------
+<div [ngSwitch]="value"> -------- value is a private variable 
+	<p *ngSwitchCase="10">10</p>
+	<p *ngSwitchDefault>100</p>
+</div>
+--------------------------------------------------------------------------------------------------------------
+Creating a Service
+
+ng g s service-name 
+---------------------------------------------------------------------------------------------------------------
